@@ -1,28 +1,28 @@
 const quotes = [
   {
     quote: "Super Cool!",
-    author: "Nico",
+    author: "- Nico",
   },
   {
     quote: "How cool is this?",
-    author: "Nico",
+    author: "- Nico",
   },
   {
     quote: "Alright... in the previous video...",
-    author: "Nico",
+    author: "- Nico",
   },
   {
-    quote: "Alright... next step what I wanna to do...",
-    author: "Nico",
+    quote: "Alright... next step, what I wanna to do...",
+    author: "- Nico",
   },
   {
     quote: "Alright... on this section...",
-    author: "Nico",
+    author: "- Nico",
   },
   {
     quote:
       "We are almost there!",
-    author: "Nico",
+    author: "- Nico",
   },
 ];
 

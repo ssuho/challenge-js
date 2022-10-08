@@ -14,7 +14,6 @@ function saveToDos() {
 function deleteToDo(event) {
   const li = event.target.parentElement;
   li.remove();
-  
 }
 
 function paintToDo(newTodo) {
@@ -23,7 +22,8 @@ function paintToDo(newTodo) {
   const span = document.createElement("span");
   span.innerHTML = newTodo.Text;
   const Btn = document.createElement("button");
-  Btn.innerHTML = "❌";
+  Btn.innerHTML = "x";
+  Btn.style.color = "#FF0000";
   Btn.addEventListener("click", deleteToDo);
   li.appendChild(span);
   li.appendChild(Btn);
