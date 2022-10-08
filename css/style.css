@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'DungGeunMo';
+}
+
+.hidden {
+  display: none;
+}
+
+#clock {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#quote {
+  color: #535353;
+}
+
+h3 {
+  color: #535353;
+}
+
+button {
+  background: none;
+  border: none;
+}
