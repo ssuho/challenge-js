@@ -226,3 +226,10 @@ li {
 .info p {
   color: #8f8f8f;
 }
+
+#click {
+  font-size: 12px;
+  position: absolute;
+  top: 170px;
+  left: 240px;
+}
