@@ -230,6 +230,13 @@ li {
 #click {
   font-size: 12px;
   position: absolute;
-  top: 170px;
-  left: 240px;
+  top: -90px;
+  left: 0px;
+}
+
+#click2 {
+  font-size: 12px;
+  position: absolute;
+  top: 235px;
+  left: 380px;
 }
