@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Time To Do!</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="clock">00:00:00</h2>
+      <form id="login-form" class="hidden">
+        <input type="text" required maxlength="15" minlength="3" placeholder="What is your name?" />
+        <button>Log In</button>
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <div id="quote" class="hidden">
+        <span></span>
+        <span></span>
+      </div>
+      <img src="./img/quote.png" alt="quote" id="quote-balloon" class="hidden">
+      <div id="background"></div>
+      <div id="todo-section">
+        <div id = dino>
+          <img src="./img/dino2.png" alt="dinosaur" id="dino2" class="hidden">
+          <img src="./img/dino.gif" alt="dinosaur" id="dinogif">
+          <img src="./img/dinodown.gif" alt="dinosaur" id="dinodowngif" class="hidden">
+        </div>
+        <div class="to-do">
+          <h3>To Do List</h3>
+          <form>
+            <input type="text" placeholder="Write and press enter" required>
+            <button id = "addbtn">Add!</button>
+          </form>
+          <ul></ul>
+         </div>
+        <div class="info">
+          <p> BGM : Jeremy Blake - 'Powerup!' / Thanks for visiting ☺</p>
+        </div>
+        <img src="./img/music-note.gif" alt="music icon" id="music-note">
+        <audio src="./bgm/Jeremy Blake_Powerup!.mp3"></audio>
+      </div>
+
+    </div>
+    <script src="./js/greetings.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/dino.js"></script>
+    <script src="./js/desert.js"></script>
+    <script src="./js/bgm.js"></script>
+  </body>
+</html>
