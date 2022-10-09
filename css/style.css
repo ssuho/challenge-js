@@ -1,12 +1,14 @@
 /* COMMON */
 @font-face {
-  font-family: 'DungGeunMo';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-family: "DungGeunMo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 * {
-  font-family: 'DungGeunMo';
+  font-family: "DungGeunMo";
+  position: relative;
 }
 .container {
   position: relative;
@@ -16,18 +18,11 @@
 }
 input {
   height: 20px;
-}
-
-
-/* HIDDEN */
-.hidden {
-  display: none;
-}
-#clock {
-  font-family: Arial, Helvetica, sans-serif;
-}
-#quote {
-  color: #535353;
+  font-size: 16px;
+  padding: 4px;
+  padding-left: 8px;
+  border-radius: 0;
+  border: 2px solid #535353;
 }
 h3 {
   color: #535353;
@@ -38,30 +33,84 @@ button {
   border: none;
 }
 
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  z-index: -1;
+}
+
+
+/* HIDDEN */
+.hidden {
+  display: none;
+}
+
+
+/* CLOCK */
+#clock {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* WEATHER SECTION */
+#weather {
+  margin-top: 10px;
+}
+
+
+/* DINO SECTION */
+#dinogif {
+  top: 160px;
+  left: 270px;
+  position: absolute;
+  z-index: 2;
+}
+
+#dino2 {
+  top: 160px;
+  left: 270px;
+  position: absolute;
+  z-index: 2;
+}
+
+#dinodowngif {
+  top: 195px;
+  left: 260px;
+  position: absolute;
+  z-index: 2;
+}
+
 
 /* TODO SECTION */
 #todo-section {
-  top: 242px;
+  top: 241px;
   bottom: 0;
   right: 0;
   left: 0;
   margin: 0 auto;
-  width: 500px;
-  height : 300px;
+  width: 504px;
+  height: 300px;
   border: 2px solid #535353;
   border-top: hidden;
   padding: 20px;
   box-sizing: border-box;
   position: absolute;
+  background-color: #fff;
+}
+#addbtn {
+  background-color: #535353;
+  color: #fff;
+  height: 32px;
+  width: 48px;
 }
 #todo-section h3 {
   margin-top: 30px;
 }
 ul {
-  list-style:none;
-  padding-left:0px;
+  list-style: none;
+  padding-left: 0px;
 }
-
 li {
   padding-bottom: 4px;
 }
@@ -78,23 +127,102 @@ li {
   height: 120px;
   position: absolute;
 }
+#background div {
+  width: 500px;
+  height: 120px;
+  position: absolute;
+}
+
+
+@keyframes infiniteScrollBg {
+  0% {
+    background-position: 0px 0%;
+  }
+  100%{
+    background-position: -2399px 0%;
+  }
+}
+
+/* .animate {
+  animation: infiniteScrollBg 40s linear infinite;
+} */
 
 
 /* QUOTE SECTION */
 #quote {
   margin: 0 auto;
-  top: 320px;
+  top: 140px;
   bottom: 0;
-  left: 0;
+  left: 50px;
   right: 0;
-  width: 500px;
+  width: 230px;
+  height: 88px;
+  position: absolute;
+  /* border: 2px solid #535353; */
+  padding: 15px;
+  box-sizing: border-box;
+  color: #535353;
+  background-color: #fff;
+}
+#quote span {
+  display: block;
+  margin: 8px;
+}
+#quote-balloon {
+  position: absolute;
+  margin: 0 auto;
+  top: 143px;
+  bottom: 0;
+  left: 50px;
+  right: 0;
+  width: 225px;
+  height: 80px;
+}
+
+#dino {
+  display: block;
+  z-index: 2;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: -230px;
+  left: -230px;
+  margin: auto;
+}
+
+#dino:hover {
+  cursor: pointer;
+}
+
+
+/* PLAY MUSIC */
+#music-note {
+  width: 30px;
+  position: absolute;
+  top: 255px;
+  left: 455px;
+}
+
+#music-note:hover {
+  cursor: pointer;
+}
+
+.info {
+  margin: 0 auto;
+  top: 310px;
+  bottom: 0;
+  left: -2px;
+  right: 0;
+  width: 504px;
   height: 88px;
   position: absolute;
   border: 2px solid #535353;
   padding: 15px;
   box-sizing: border-box;
+  color: #535353;
+  background-color: #fff;
 }
-#quote span {
-  display: block;
-  margin: 8px;
+
+.info p {
+  color: #8f8f8f;
 }

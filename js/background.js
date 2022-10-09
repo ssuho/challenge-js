@@ -1,9 +1,11 @@
-const images = ["0.png", "1.png", "2.png"];
+const images = ["bg0.png", "bg1.png", "bg2.png"];
 const chosenImage = images[Math.floor(Math.random() * images.length)]
 
-const bgArea = document.querySelector("#background");
-const bgImage = document.createElement("img");
+const bg = document.body;
+const bgImage = document.createElement("div");
 
-bgImage.src = `img/${chosenImage}`;
+bgImage.classList.add("bg")
+bgImage.style.backgroundImage = `url('img/${chosenImage}')`;
+// bgImage.style.animation = "infiniteScrollBg 10s linear infinite";
 
-bgArea.appendChild(bgImage);
+bg.appendChild(bgImage);
